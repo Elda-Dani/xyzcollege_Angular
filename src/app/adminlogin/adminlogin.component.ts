@@ -13,6 +13,7 @@ export class AdminloginComponent implements OnInit {
 username=""
 password=""
 
+status:boolean=false
 
 readValues=()=>{
   let data={
@@ -25,6 +26,9 @@ if (this.username=="admin" && this.password=="admin") {
 this.myrouter.navigate(["/adds"])
 } else {
   alert("Invalid Credentials")
+  this.username=""
+this.password=""
+this.status=true
 }
 }
 
