@@ -8,6 +8,7 @@
                 <table class="table">
                     <thead>
                       <tr>
+                        <th scope="col">Id</th>
                         <th scope="col">Name</th>
                         <th scope="col">Department</th>
                         <th scope="col">Designation</th>
@@ -16,10 +17,12 @@
                         <th scope="col">Address</th>
                         <th scope="col">Mobile</th>
                         <th scope="col">Date of Joining</th>
+                        <th scope="col">Delete</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr *ngFor="let i of facultyData">
+                        <td>{{i.id}}</td>
                         <td>{{i.name}}</td>
                         <td>{{i.department}}</td>
                         <td>{{i.designation}}</td>
@@ -28,6 +31,7 @@
                         <td>{{i.address}}</td>
                         <td>{{i.mobile}}</td>
                         <td>{{i.datejoin}}</td>
+                        <td><button class="btn btn-danger" (click)="deleteFaculty(i.id)">Delete</button></td>
                       </tr>
                      
                     </tbody>

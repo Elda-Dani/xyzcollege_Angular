@@ -8,6 +8,7 @@
                 <table class="table">
                     <thead>
                       <tr>
+                        <th scope="col">Id</th>
                         <th scope="col">Name</th>
                         <th scope="col">Roll No</th>
                         <th scope="col">Admission No</th>
@@ -19,10 +20,12 @@
                         <th scope="col">Parent Email</th>
                         <th scope="col">Guardian Name</th>
                         <th scope="col">Guardian Address</th>
+                        <th scope="col">Delete</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr *ngFor="let i of studentData">
+                        <td>{{i.id}}</td>
                         <td>{{i.name}}</td>
                         <td>{{i.roll}}</td>
                         <td>{{i.admission}}</td>
@@ -34,6 +37,7 @@
                         <td>{{i.parentemail}}</td>
                         <td>{{i.guardianname}}</td>
                         <td>{{i.guardianaddress}}</td>
+                        <td><button class="btn btn-danger" (click)="deleteStudents(i.id)">Delete</button></td>
                       </tr>
                      
                     </tbody>
