@@ -21,6 +21,10 @@ deleteStudent=(data:any)=>{
   return this.http.post("http://localhost:8080/deletestudent",data)
 }
 
+searchStudent=(data:any)=>{
+  return this.http.post("http://localhost:8080/searchstudent",data)
+}
+
 
 viewFaculty=()=>{
   return this.http.get("http://localhost:8080/viewfaculty")
@@ -32,5 +36,9 @@ addFaculty=(data:any)=>{
 
 deleteFaculty=(data:any)=>{
   return this.http.post("http://localhost:8080/deletefaculty",data)
+}
+
+searchFaculty=(data:any)=>{
+  return this.http.post("http://localhost:8080/searchfaculty",data)
 }
 }

@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<div class="row g-4">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<label for="" class="form-label">Name/Admission No</label>
+<input type="text" class="form-control" name="name" [(ngModel)]="name">
+<input type="text" class="form-control"  name="admission" [(ngModel)]="admission">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <button class="btn btn-primary" (click)="readValues()">Search</button>
+    </div>
+
+
+
+<div *ngFor="let i of data">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" value="{{i.name}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Roll No</label>
+        <input type="text" class="form-control" value="{{i.roll}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Admission</label>
+        <input type="text" class="form-control" value="{{i.admission}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">College</label>
+        <input type="text" class="form-control" value="{{i.college}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" value="{{i.department}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Blood Group</label>
+        <input type="text" class="form-control" value="{{i.bloodgroup}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Date of Birth</label>
+        <input type="text" class="form-control" value="{{i.dob}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Parent Name</label>
+        <input type="text" class="form-control" value="{{i.parentname}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Parent Email</label>
+        <input type="text" class="form-control" value="{{i.parentemail}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Guardian Name</label>
+        <input type="text" class="form-control" value="{{i.guardianname}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Guardian Address</label>
+        <input type="text" class="form-control" value="{{i.guardianaddress}}">
+        </div>
+       
+
+</div>
+    
+</div>
+
+        </div>
+    </div>
+</div>
+
