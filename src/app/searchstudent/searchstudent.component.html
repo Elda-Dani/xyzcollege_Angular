@@ -6,9 +6,8 @@
 
 <div class="row g-4">
     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-<label for="" class="form-label">Name/Admission No</label>
-<input type="text" class="form-control" name="name" [(ngModel)]="name">
-<input type="text" class="form-control"  name="admission" [(ngModel)]="admission">
+        <label for="" class="form-label">Name/Admission No</label>
+<input type="text" class="form-control" name="inputValue" [(ngModel)]="inputValue">
 
     </div>
     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -17,7 +16,7 @@
 
 
 
-<div *ngFor="let i of data">
+<div *ngFor="let i of dataD">
     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
         <label for="" class="form-label">Name</label>
         <input type="text" class="form-control" value="{{i.name}}">

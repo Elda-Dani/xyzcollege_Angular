@@ -12,28 +12,28 @@ export class SearchstudentComponent implements OnInit {
 
 
 
-  name=""
-  admission=""
+inputValue=""
+
 
   readValues=()=>{
     let data={
-      "name":this.name,
-      "admission":this.admission
+      "name":this.inputValue,
+      "dob":this.inputValue
     }
+
     console.log(data)
     this.myapi.searchStudent(data).subscribe(
       (resp)=>{
-       this.data=resp
-  
-        this.name=""
-        this.admission=""
+       this.dataD=resp
+  console.log(resp)
+     
       }
     )
   }
-  
-data:any=[]
+
+dataD:any=[]
 
   ngOnInit(): void {
   }
-
+  
 }
